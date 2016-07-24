@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll" android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="ca.uwaterloo.lab3_206_09.MainActivity"
+        android:id="@+id/parentElement"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step Count : "
+            android:id="@+id/steps"
+            android:textSize="10pt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step Length:"
+            android:textSize="10pt" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/stepLength"
+            android:text="0.75" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Angle:"
+            android:id="@+id/angle"
+            android:textSize="10pt" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset Steps"
+            android:id="@+id/resetSteps" />
+
+        <ImageView
+            android:layout_width="109dp"
+            android:layout_height="174dp"
+            android:id="@+id/compass"
+            android:layout_gravity="center_horizontal"
+            android:longClickable="true"
+            android:src="@drawable/compass"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fake Step"
+            android:id="@+id/fakeStep" />
+
+        <TextView
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:text="Next Instruction:"
+            android:id="@+id/Instructions"
+            android:textSize="10pt"
+            android:layout_gravity="center_horizontal|left" />
+
+
+    </LinearLayout>
+</ScrollView>
